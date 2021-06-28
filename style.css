@@ -12,10 +12,10 @@
   background-color: transparent;
   transition: all 0.5s;
   backdrop-filter: blur(20px);
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    2px 7px 10px 4px rgba(74, 74, 74, 0.83);
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    2px 7px 10px 4px rgba(74, 74, 74, 0.83);
+  -webkit-box-shadow: 0px 6px 5px -5px #000000;
+  box-shadow: 0px 6px 5px -5px #000000;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .p-navbar .nav-link {
@@ -37,8 +37,10 @@
 
 .p-navbar .p-nav-scrolled {
   background-color: var(--primary-tr);
-  -webkit-box-shadow: 0px 9px 15px 2px #4a4a4a;
-  box-shadow: 0px 9px 15px 2px #4a4a4a;
+  -webkit-box-shadow: 0px 6px 5px -5px #000000;
+  box-shadow: 0px 6px 5px -5px #000000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   backdrop-filter: blur(15px);
 }
 
@@ -93,7 +95,7 @@
 }
 
 #p-nav-btn.open {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 #btn-cta .fa-angle-right {
