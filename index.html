@@ -36,8 +36,8 @@
     <title>Presto</title>
   </head>
   <body>
-    <nav id="p-navbar" class="navbar navbar-expand-lg p-navbar fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg p-navbar fixed-top p-0 m-0">
+      <div id="p-navbar" class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 mt-3 mt-lg-0 d-lg-none" href="#"
           ><i class="fab fa-contao"></i
         ></a>
@@ -70,13 +70,13 @@
           </form>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Annunci</a>
+              <a class="nav-link fs-5" href="#">Annunci</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Profilo</a>
+                <a class="nav-link fs-5" href="#">Profilo</a>
               </li>
               </ul>
             </li>
@@ -89,8 +89,8 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-              <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-              <p class="lead">A great starter layout for a landing page</p>
+              <h1 class="font-weight-light text-primary-dark fw-bold display-3">Corri fai Presto...!</h1>
+              <p class="lead text-primary fw-bold fs-4">Sito di Annunci per tutti</p>
             </div>
           </div>
         </div>
@@ -100,18 +100,20 @@
     <div style="height: 2000px;"></div>
 
     
+<script>
+   let nav = document.querySelector('#p-navbar')
 
-    <script>
-        let nav = document.querySelector('#p-navbar')
-
-document.addEventListener("scroll", function () {
-    if (window.scrollY > 350) {
-        nav.classList.add("p-nav-scrolled");
+document.addEventListener('scroll', function () {
+    if (window.scrollY > 990) {
+        nav.classList.add('p-nav-scrolled');
     } else {
-        nav.classList.remove("p-nav-scrolled");
+        nav.classList.remove('p-nav-scrolled');
     }
-});
-    </script>
+})
+
+
+</script>
+   
 
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -119,7 +121,7 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 crossorigin="anonymous"
 ></script>
 
-<!-- <script src="./script.js"></script> -->
+
 
   </body>
 </html>
