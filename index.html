@@ -42,6 +42,7 @@
           ><i class="fab fa-contao"></i
         ></a>
         <button
+          id="p-nav-btn"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -90,7 +91,8 @@
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
               <h1 class="font-weight-light text-primary-dark fw-bold display-3">Corri fai Presto...!</h1>
-              <p class="lead text-primary fw-bold fs-4">Sito di Annunci per tutti</p>
+              <p class="lead text-primary1 fw-bold fs-4">Sito di Annunci per tutti</p>
+              <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw bold">Cerca tra gli annunci <i class="fas fa-angle-right"></i></button>
             </div>
           </div>
         </div>
@@ -102,6 +104,7 @@
     
 <script>
    let nav = document.querySelector('#p-navbar')
+   let btnNav = document.querySelector('#p-nav-btn')
 
 document.addEventListener('scroll', function () {
     if (window.scrollY > 990) {
@@ -109,11 +112,14 @@ document.addEventListener('scroll', function () {
     } else {
         nav.classList.remove('p-nav-scrolled');
     }
+
+    btnNav.addEventListener('click' , function(){
+      btnNav.classList.toggle('open')
+    })
 })
 
-
 </script>
-   
+
 
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

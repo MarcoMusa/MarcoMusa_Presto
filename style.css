@@ -3,8 +3,8 @@
 }
 
 :root {
-  --primary-dark: #3c23b7f8;
-  --primary: #5a4bb5;
+  --primary-dark: #3c23b7;
+  --primary: #594bb5;
   --primary-tr: #594bb5d3;
 }
 
@@ -70,6 +70,32 @@
   color: var(--primary-dark);
 }
 
-.text-primary {
+.text-primary1 {
   color: var(--primary);
+}
+
+.p-btn-primary1 {
+  background-color: var(--primary) !important;
+  color: white;
+}
+
+.p-btn-primary1:hover {
+  background-color: var(--primary-dark) !important;
+  color: white;
+}
+
+#p-nav-btn {
+  transition: all 0.3s;
+}
+
+#p-nav-btn:focus {
+  box-shadow: none;
+}
+
+#p-nav-btn.open {
+  transform: rotate(90deg);
+}
+
+#btn-cta .fa-angle-right {
+  margin-left: 10px;
 }
