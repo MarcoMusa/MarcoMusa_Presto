@@ -1,0 +1,14 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-dark: #3c23b7;
+  --primary: #5a4bb5;
+}
+
+.p-navbar {
+  background-color: transparent;
+  /* transition: all 0.5s;
+  backdrop-filter: blur(10px); */
+}
