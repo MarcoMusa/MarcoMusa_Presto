@@ -8,6 +8,10 @@
   --primary-tr: #594bb5d3;
 }
 
+.mg-top {
+  margin-top: 200px;
+}
+
 .p-navbar {
   background-color: transparent;
   transition: all 0.5s;
