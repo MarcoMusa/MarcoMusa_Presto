@@ -8,6 +8,10 @@
   --primary-tr: #594bb5d3;
 }
 
+body {
+  background-color: #ede6d7 !important;
+}
+
 .mg-top {
   margin-top: 200px;
 }
