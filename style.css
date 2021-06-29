@@ -7,6 +7,7 @@
   --primary: #594bb5;
   --primary-tr: #594bb5d3;
   --purple: #594bb586;
+  --blue: #3c23b71f;
 }
 
 body {
@@ -19,6 +20,10 @@ body {
 
 .bg-purple {
   background-color: var(--purple) !important;
+}
+
+.bg-blu {
+  background-color: var(--blue) !important;
 }
 
 .p-navbar {

@@ -36,6 +36,13 @@
       crossorigin="anonymous"
     />
 
+    <!-- //Glide CSS Core -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css" integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!-- //Glide CSS theme -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css" integrity="sha512-Cn5/xnOLSKjVpNCsJZCtgQhxp00FcFnlRwgbSG7WGFq1BVvyG+LoOarjXAq//8Vstyu0Na9wvEKLWR67/wAy3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Presto</title>
   </head>
   <body>
@@ -110,62 +117,55 @@
         </div>
       </div>
 
-
-      <div class="container  mg-top">
+<div class="container-fluid bg-blu">
+      <div class="container mg-top">
         <div class="row">
-          <h2 class="text-center text-primary-dark display-5 fw-bold">Gli ultimi <span class="text-primary1 fw-bolder display-6"> Annunci</span></h2>
-        </div>
-      </div>
-      
-      
-
-    <div style="height: 2000px;"></div>
-
-<script>
-  let categoriesWrapper = document.querySelector('#categories-wrapper')
-
-  let categories = [
-    {title:'Casa' , annunci:'Immobili' , icon: '<i class="fas fa-home"></i>'},
-    {title:'Moto' , annunci:'Tutti i modelli' , icon: '<i class="fas fa-motorcycle"></i>'},
-    {title:'Tech' , annunci:'Software - Hardware' , icon: '<i class="fas fa-memory"></i>'},
-    {title:'Giardinaggio' , annunci:'Prodotti per esterno' , icon: '<i class="fas fa-seedling"></i>'},
-    {title:'Abbigliamento' , annunci:'vario genere' , icon: '<i class="fas fa-tshirt"></i>'},
-    {title:'Games' , annunci:'Console - Giochi' , icon: '<i class="fas fa-gamepad"></i>'},
-    {title:'Libri' , annunci:'i più interessanti' , icon: '<i class="fas fa-book-open"></i>'},
-    {title:'Animali' , annunci:'Per affido' , icon: '<i class="fas fa-paw"></i>'},
-
-  ];
-
-  categories.forEach(category=>{
-    let card = document.createElement('div');
-    card.classList.add('col-12' , 'col-sm-6' , 'col-lg-3' , 'my-3')
-    card.innerHTML=
-    `
-                  <div class="card p-card" data-aos="fade-down" style="width: 16rem;">
+          <h2 class="text-center text-primary-dark display-5 fw-bold mb-5">Gli ultimi <span class="text-primary1 fw-bolder display-6"> Annunci</span></h2>
+          <div class="row justify-content-center">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <div class="p-card-icon-box">
-                            ${category.icon}
-                      </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                            <h5 class="card-title fw-bold text-primary-dark mt-4">${category.title}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">${category.annunci}</h6>
-                          </div>
-                          <a href="#" class="btn p-btn-primary1 rounded-pill">
-                            <i class="fas fa-angle-right"></i>
-                          </a>
-                        </div>
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza l'annuncio <i class="fas fa-angle-right"></i></button>
                     </div>
                   </div>
-                  `
+                </li>
+                <li class="glide__slide">
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza l'annuncio <i class="fas fa-angle-right"></i></button>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide"><div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza l'annuncio <i class="fas fa-angle-right"></i></button>
+                  </div>
+                </div>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+      
+      
 
-                  categoriesWrapper.appendChild(card)
+    
 
-
-  })
-
-
-</script>
 
     
 <script src="./script.js"></script>
@@ -177,11 +177,22 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 crossorigin="anonymous"
 ></script>
 
+<!-- //Glide Js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.js" integrity="sha512-vZGsugWaSqQZuW8N5Z3ild7Tk8NqiZjKffeIQGpnnIs6g7HVZaFZjlLKPIw1qDsrQ5KAxAGfBinglQWu6i/8DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <!-- //AOS Js -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
   AOS.init();
+</script>
+
+<script>
+  new Glide('.glide', {
+    type:'carousel',
+    perView: '3',
+    focusAt: 'center',
+  }).mount()
 </script>
 
 
