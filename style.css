@@ -115,6 +115,23 @@ body {
   margin-left: 10px;
 }
 
+#btn-cta:hover .fa-angle-right {
+  animation-name: arrowMove;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes arrowMove {
+  0% {
+    margin-left: 10px;
+  }
+  100% {
+    margin-left: 20px;
+  }
+}
+
 .p-card-icon-box {
   background-color: var(--primary-tr);
   color: var(--primary);
