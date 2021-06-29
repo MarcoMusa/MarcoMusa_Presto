@@ -6,6 +6,7 @@
   --primary-dark: #3c23b7;
   --primary: #594bb5;
   --primary-tr: #594bb5d3;
+  --purple: #594bb586;
 }
 
 body {
@@ -14,6 +15,10 @@ body {
 
 .mg-top {
   margin-top: 200px;
+}
+
+.bg-purple {
+  background-color: var(--purple) !important;
 }
 
 .p-navbar {
