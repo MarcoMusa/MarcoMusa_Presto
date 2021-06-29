@@ -8,6 +8,7 @@
   --primary-tr: #594bb5d3;
   --purple: #594bb586;
   --blue: #3c23b71f;
+  --viola: #5a4885;
 }
 
 body {
@@ -16,6 +17,14 @@ body {
 
 .mg-top {
   margin-top: 200px;
+}
+
+.text-purple {
+  color: var(--purple) !important;
+}
+
+.text-viola {
+  color: var(--viola);
 }
 
 .text-grigio {
@@ -28,6 +37,10 @@ body {
 
 .bg-blu {
   background-color: var(--blue) !important;
+}
+
+.bg-grigio {
+  background-color: #ede6d7 !important;
 }
 
 .p-navbar {
