@@ -170,6 +170,7 @@ body {
 }
 
 .p-card-carousel {
-  background-color: var(--purple);
-  border-radius: 0.8rem;
+  background-color: var(--purple) !important;
+  border-radius: 0.8rem !important;
+  border: none !important;
 }
