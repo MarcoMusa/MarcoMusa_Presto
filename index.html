@@ -125,8 +125,10 @@
             </div>
             <div class="col-12 col-md-6">
               <h2 class="text-viola fw-bold display-6">Non perdere Tempo...!</h2>
-              <p class="lead">Gli annunci più convenienti e a tempo limitato</p>
+              <p class="lead">Gli annunci più convenienti a tempo limitato</p>
+              <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Scopri le opportunità <i class="fas fa-angle-right"></i></button>
             </div>
+            
           </div>
         </div>
       </div>
@@ -136,45 +138,24 @@
         <div class="row">
           <h1 class="text-center text-viola fw-bold display-6 mb-5">Gli ultimi <span class=" text-viola fw-bolder display-5"> Annunci</span></h1>
           <div class="row justify-content-center">
-          <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide">
-                  <div class="card p-card-carousel" style="width: 16rem;">
-                    <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza <i class="fas fa-angle-right"></i></button>
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="card p-card-carousel" style="width: 16rem;">
-                    <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza <i class="fas fa-angle-right"></i></button>
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide"><div class="card p-card-carousel" style="width: 16rem;">
-                  <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza <i class="fas fa-angle-right"></i></button>
-                  </div>
-                </div>
-              </li>
-              </ul>
+          <!--STRUTTURA CAROSELLO-->
+          <div class="col-12">
+            <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides" id="last-ads-carousel">
+                </ul>
+              </div>
+              <!-- Frecce Carosello con icone-->
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left carousel-arrows" data-glide-dir="<"><i
+                    class="fas fs-3 fw-bold angle-carousel fa-angle-double-left"></i></button>
+                <button class="glide__arrow glide__arrow--right carousel-arrows" data-glide-dir=">"><i
+                    class="fas fs-3 angle-carousel fw-bold fa-angle-double-right"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
-    </div>
 
     
 
@@ -240,6 +221,11 @@
 
 </body>
       
+
+<script>
+  
+
+</script>
       
 
     
