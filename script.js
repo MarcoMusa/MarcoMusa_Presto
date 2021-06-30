@@ -94,7 +94,7 @@ function categoriescarouselhome() {
 
     li.innerHTML = ` 
     <li class="glide__slide">
-    <div class="card position-relative p-card-carousel" style="width: 16rem;">
+    <div class="card position-relative p-card-carousel" " style="width: 16rem;">
       <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
       <button class="btn btn-like">
         <i class="far fa-heart"></i>

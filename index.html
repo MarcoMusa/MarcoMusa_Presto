@@ -267,6 +267,16 @@ crossorigin="anonymous"
     type:'carousel',
     perView: '4',
     focusAt: 'center',
+    gap: 40,
+    breakpoints: {
+      998: {
+        perView: 2
+      },
+
+      576:{
+        perView: 1
+      }
+    }
   }).mount()
 </script>
 
