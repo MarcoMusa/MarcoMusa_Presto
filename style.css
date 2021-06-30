@@ -16,7 +16,7 @@ body {
 }
 
 .mg-top {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .text-purple {
@@ -184,6 +184,16 @@ body {
 
 .p-card-carousel {
   background-color: var(--purple) !important;
+  -webkit-box-shadow: 2px 7px 10px 4px rgba(51, 51, 51, 0.83);
+  box-shadow: 2px 7px 10px 4px rgba(51, 51, 51, 0.83);
+  border-radius: 0.8rem !important;
+  border: none !important;
+}
+
+.p-card-carousel:hover {
+  background-color: var(--purple) !important;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(51, 51, 51, 0.83);
+  box-shadow: 0px 0px 10px 4px rgba(51, 51, 51, 0.83);
   border-radius: 0.8rem !important;
   border: none !important;
 }
