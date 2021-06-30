@@ -1,3 +1,4 @@
+
 let nav = document.querySelector('#p-navbar')
 let btnNav = document.querySelector('#p-nav-btn')
 
@@ -12,7 +13,6 @@ document.addEventListener('scroll', function () {
     btnNav.classList.toggle('open')
   })
 })
-
 
 
 let categoriesWrapper = document.querySelector('#categories-wrapper')
@@ -58,16 +58,16 @@ categories.forEach(category => {
 })
 
 function btnlike() {
-  let likes = document.querySelectorAll(".btn-like");
+  let likes = document.querySelectorAll('.btn-like');
 
   // CREO EVENTO AL BOTTONE
   likes.forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
       // rimuovo (far) cuore vuoto
-      btn.children[0].classList.toggle("far");
+      btn.children[0].classList.toggle('far');
       // aggiungo (fas) cuore pieno
-      btn.children[0].classList.toggle("fas");
+      btn.children[0].classList.toggle('fas');
     });
   });
 }
@@ -102,8 +102,7 @@ function categoriescarouselhome() {
       <div class="card-body">
         <h5 class="card-title">${ad.title}</h5>
         <p class="card-text">${ad.category}</p>
-        <p class="card-text">${ad.prezzo}</p>
-        
+        <p class="card-text">${ad.Prezzo}</p>
         <button id="btn-cta" class="btn p-btn-primary1 rounded-pill fw-bold">Visualizza <i class="fas fa-angle-right"></i></button>
       </div>
     </div>
